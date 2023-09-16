@@ -34,4 +34,8 @@ Gympass style app
 // SOLID
 
 // D - Dependency Inversion Principle
- // receber as dependencias como parametro
+// receber as dependencias como parametro
+
+// TESTES - TESTE UNITÁRIOS
+// FERRAMENTA: VITEST
+// yarn add vitest vite-tsconfig-paths -D
