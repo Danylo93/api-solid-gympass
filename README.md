@@ -36,6 +36,9 @@ Gympass style app
 // D - Dependency Inversion Principle
 // receber as dependencias como parametro
 
-// TESTES - TESTE UNITÁRIOS
+// TESTES - 
+//  TESTE UNITÁRIOS - TESTE SEM INTEGRACAO EXTERNA
+// TESTE DE INTEGRACAO - QUANDO O TESTE É FEITO DENTRO DO BANCO DE DADOS
+
 // FERRAMENTA: VITEST
 // yarn add vitest vite-tsconfig-paths -D
