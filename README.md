@@ -6,12 +6,12 @@ Gympass style app
 
 - [x] Deve ser possível se cadastrar;
 - [x] Deve ser possível se autenticar
-- [] Deve ser possível obter o perfil de um usuario logado
+- [x] Deve ser possível obter o perfil de um usuario logado
 - [] Deve ser possível obter o numero de check-ins realizados pelo usuário
 - [] Deve ser possível o usuario obter seu histórico de check-ins
 - [] Deve ser possível o usuario buscar academias proximas
 - [] Deve ser possível o usario buscar academias pelo nome
-- [] Deve ser possível o usuario realizar check-in em uma academia
+- [x] Deve ser possível o usuario realizar check-in em uma academia
 - [] Deve ser possível validar o check-in de um usuario
 - [] Deve ser possível cadastrar uma academia
 
@@ -36,9 +36,12 @@ Gympass style app
 // D - Dependency Inversion Principle
 // receber as dependencias como parametro
 
-// TESTES - 
-//  TESTE UNITÁRIOS - TESTE SEM INTEGRACAO EXTERNA
+// TESTES -
+// TESTE UNITÁRIOS - TESTE SEM INTEGRACAO EXTERNA
 // TESTE DE INTEGRACAO - QUANDO O TESTE É FEITO DENTRO DO BANCO DE DADOS
 
 // FERRAMENTA: VITEST
 // yarn add vitest vite-tsconfig-paths -D
+
+// TDD - TESTE DRIVEN DEVELOPMENT(Metodologia) - DESENVOLVIMENTO DIRIGIDO A TESTES
+// etapas de testes: red , green , refactor
