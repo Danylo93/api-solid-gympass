@@ -31,16 +31,16 @@ Gympass style app
 - [x] Todas as listas de dados precisam estar paginadas com 20 itens por pagina
 - [] o usuario deve ser identificado por um JWT (json web token)
 
-// SOLID
+// PROJETO ELABORADO COM PRÍNCIPIOS DE S.O.L.I.D
 
-// D - Dependency Inversion Principle
+// D - Dependency Inversion Principle (Principio de Inversão de dependencias)
 // receber as dependencias como parametro
 
-// TESTES -
+// TIPO DE TESTES:
 // TESTE UNITÁRIOS - TESTE SEM INTEGRACAO EXTERNA
-// TESTE DE INTEGRACAO - QUANDO O TESTE É FEITO DENTRO DO BANCO DE DADOS
+// TESTE DE INTEGRACAO (E2E) - QUANDO O TESTE É FEITO ENGLOBANDO TODAS AS INTEGRAÇÕES (BD, ETC...)
 
-// FERRAMENTA: VITEST
+// FERRAMENTA DE TESTE: VITEST
 // yarn add vitest vite-tsconfig-paths -D
 
 // TDD - TESTE DRIVEN DEVELOPMENT(Metodologia) - DESENVOLVIMENTO DIRIGIDO A TESTES
