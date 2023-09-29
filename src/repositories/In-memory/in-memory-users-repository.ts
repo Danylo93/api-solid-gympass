@@ -30,8 +30,10 @@ export class InMemoryUsersRepository implements UsersRepository {
       id: randomUUID(),
       name: data.name,
       email: data.email,
+      role: data.role ?? 'MEMBER',
       password_hash: data.password_hash,
       created_at: new Date(),
+      updated_at: new Date(),
     }
 
     this.items.push(user)

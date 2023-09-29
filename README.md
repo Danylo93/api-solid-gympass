@@ -45,3 +45,6 @@ Gympass style app
 
 // TDD - TESTE DRIVEN DEVELOPMENT(Metodologia) - DESENVOLVIMENTO DIRIGIDO A TESTES
 // etapas de testes: red , green , refactor
+
+
+// RBAC - Autorização por cargos
