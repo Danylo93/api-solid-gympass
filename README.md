@@ -48,3 +48,6 @@ Gympass style app
 
 
 // RBAC - Autorização por cargos
+
+
+// CI/CD =  CI - CONTINUOUS INTEGRATION -  CD - CONTINUOUS DEPLOYMENT/DELIVERY
