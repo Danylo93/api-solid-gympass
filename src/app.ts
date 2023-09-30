@@ -4,7 +4,9 @@ import fastifyCookie from '@fastify/cookie'
 import { ZodError } from 'zod'
 import { env } from './env'
 import { userRoutes } from './http/controllers/users/routes'
-import { gymRoutes } from './http/controllers/gyms/routes'
+
+import { checkInsRoutes } from './http/controllers/check-ins/routes'
+import { gymsRoutes } from './http/controllers/gyms/routes'
 
 export const app = fastify()
 
@@ -22,20 +24,21 @@ app.register(fastifyJwt, {
 app.register(fastifyCookie)
 
 app.register(userRoutes)
-app.register(gymRoutes)
+app.register(gymsRoutes)
+app.register(checkInsRoutes)
 
-app.setErrorHandler((error, _request, reply) => {
+app.setErrorHandler((error, _, reply) => {
   if (error instanceof ZodError) {
-    return reply
-      .status(400)
-      .send({ message: 'Validation errors', issues: error.format() })
+    reply.status(409).send({
+      message: 'Validation Error',
+      issues: error.format(),
+    })
   }
-
-  if (env.NODE_ENV !== 'production') {
+  if (env.NODE_ENV !== 'dev') {
     console.error(error)
-  } else {
-    // TODO: DATADOG/NEWRELIC/SENTRY
   }
 
-  return reply.status(500).send({ message: 'Internal Server error.' })
+  return reply.status(500).send({
+    message: error,
+  })
 })
