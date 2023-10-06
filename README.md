@@ -51,3 +51,5 @@ Gympass style app
 
 
 // CI/CD =  CI - CONTINUOUS INTEGRATION -  CD - CONTINUOUS DEPLOYMENT/DELIVERY
+
+//npx prisma migrate build
