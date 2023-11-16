@@ -46,10 +46,10 @@ Gympass style app
 // TDD - TESTE DRIVEN DEVELOPMENT(Metodologia) - DESENVOLVIMENTO DIRIGIDO A TESTES
 // etapas de testes: red , green , refactor
 
-
 // RBAC - Autorização por cargos
 
+// Utilizar o commit com o padrao commitlint : git commit -m "ci(teste): :fire: mensagem do commit"
 
-// CI/CD =  CI - CONTINUOUS INTEGRATION -  CD - CONTINUOUS DEPLOYMENT/DELIVERY
+// CI/CD = CI - CONTINUOUS INTEGRATION - CD - CONTINUOUS DEPLOYMENT/DELIVERY
 
 //npx prisma migrate build
