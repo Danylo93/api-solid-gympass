@@ -1,28 +1,11 @@
-version: "3"
+version: '3'
 
 services:
-  server:
-      build: .
-      container_name: apisolid
-      ports:
-        - 3333:3333
-      links:
-        - database
-      environment:
-        DB_USER: postgres
-        DB_PWD: postgres
-        DB_HOST: database
-        DB_PORT: 5432
-  database:
+  api-solid-pg:
     image: bitnami/postgresql
-    container_name: database
     ports:
       - 5432:5432
     environment:
       - POSTGRESQL_USERNAME=docker
       - POSTGRESQL_PASSWORD=docker
-      - POSTGRESQL_DATABASE=apisolid
-    volumes:
-      - db:/var/lib/postgresql/data
-volumes:
-  db:
+      - POSTGRESQL_DATABASE=ignitenode03

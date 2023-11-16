@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["camelcase", "fastify", "rocketseat"]
+  "cSpell.words": ["camelcase", "fastify", "rocketseat"],
+  "conventionalCommits.scopes": ["testes"]
 }
