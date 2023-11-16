@@ -15,7 +15,8 @@
     "test:e2e": "vitest run --dir src/http",
     "test:e2e:watch": "vitest --dir src/http",
     "test:coverage": "vitest run --coverage",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "commitlint": "commitlint --edit"
   },
   "keywords": [],
   "author": "",
@@ -44,6 +45,7 @@
     "dayjs": "1.11.10",
     "dotenv": "16.3.1",
     "fastify": "4.23.2",
+    "husky": "8.0.3",
     "vitest": "0.28.5",
     "zod": "3.22.2"
   }
